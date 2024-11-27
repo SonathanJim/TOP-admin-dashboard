@@ -1,0 +1,59 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: rgb(219, 229, 240);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr 2fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    background-color: rgb(30, 169, 255);
+}
+
+.nav {
+
+}
+
+.header {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    background-color: white;
+}
+
+.projects {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin-inline: 15px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5%;
+}
+
+.rightbar {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+
